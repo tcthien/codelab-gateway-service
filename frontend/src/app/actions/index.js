@@ -1,29 +1,23 @@
-import * as types from '../constants/ActionTypes';
-
-export function addTodo(text) {
-  return {type: types.ADD_TODO, text};
+function addTodo(text) {
+  return {type: ADD_TODO, text};
 }
 
-export function deleteTodo(id) {
-  return {type: types.DELETE_TODO, id};
+function deleteTodo(id) {
+  return {type: DELETE_TODO, id};
 }
 
-export function editTodo(id, text) {
-  return {type: types.EDIT_TODO, id, text};
+function editTodo(id, text) {
+  return {type: EDIT_TODO, id, text};
 }
 
-export function completeTodo(id) {
-  return {type: types.COMPLETE_TODO, id};
+function completeTodo(id) {
+  return {type: COMPLETE_TODO, id};
 }
 
-export function completeAll() {
-  return {type: types.COMPLETE_ALL};
+function completeAll() {
+  return {type: COMPLETE_ALL};
 }
 
-export function clearCompleted() {
-  return {type: types.CLEAR_COMPLETED};
-}
-
-export function changeVisibility(filter) {
-  return {type: filter};
+function clearCompleted() {
+  return {type: CLEAR_COMPLETED};
 }

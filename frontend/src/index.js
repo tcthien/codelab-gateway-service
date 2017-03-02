@@ -1,22 +1,14 @@
-import 'core-js/client/shim';
-import 'zone.js/dist/zone';
+const Provider = ReactRedux.Provider;
+const store = Redux.createStore(rootReducer);
+const Router = ReactRouter.Router;
+const Route = ReactRouter.Route;
+const browserHistory = ReactRouter.browserHistory;
 
-import '@angular/common';
-import 'rxjs';
-
-import 'todomvc-app-css/index.css';
-import './index.styl';
-
-import {enableProdMode} from '@angular/core';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {AppModule} from './app';
-
-declare var process: any;
-if (process.env.NODE_ENV === 'production') {
-  enableProdMode();
-} else {
-  Error['stackTraceLimit'] = Infinity; // eslint-disable-line dot-notation
-  require('zone.js/dist/long-stack-trace-zone');
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule);
+ReactDOM.render(
+  <Provider store={store}>
+    <Router history={browserHistory}>
+      <Route path="/" component={App}/>
+    </Router>
+  </Provider>,
+  document.getElementById('root')
+);

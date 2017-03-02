@@ -1,4 +1,4 @@
-const conf = require('./gulp.conf');
+const listFiles = require('./karma-files.conf');
 
 module.exports = function (config) {
   const configuration = {
@@ -10,35 +10,18 @@ module.exports = function (config) {
       outputDir: 'test-reports'
     },
     browsers: [
-      'Chrome'
+      'PhantomJS'
     ],
     frameworks: [
       'jasmine'
     ],
-    files: [
-      'node_modules/es6-shim/es6-shim.js',
-      conf.path.src('index.spec.js')
-    ],
-    preprocessors: {
-      [conf.path.src('index.spec.js')]: [
-        'webpack'
-      ]
-    },
-    reporters: ['progress', 'coverage'],
-    coverageReporter: {
-      type: 'html',
-      dir: 'coverage/'
-    },
-    webpack: require('./webpack-test.conf'),
-    webpackMiddleware: {
-      noInfo: true
-    },
+    files: listFiles(),
     plugins: [
       require('karma-jasmine'),
       require('karma-junit-reporter'),
       require('karma-coverage'),
-      require('karma-chrome-launcher'),
-      require('karma-webpack')
+      require('karma-phantomjs-launcher'),
+      require('karma-phantomjs-shim')
     ]
   };
 
