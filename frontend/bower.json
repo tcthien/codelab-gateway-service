@@ -8,12 +8,8 @@
     "react-redux": "https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.2/react-redux.js",
     "redux": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.js",
     "todomvc-app-css": "^2.0.6",
-    "es6-shim": "^0.35.3"
+    "es6-shim": "^0.35.3",
+    "materialize": "^0.98.0"
   },
-  "devDependencies": {},
-  "overrides": {
-    "todomvc-app-css": {
-      "main": "index.css"
-    }
-  }
+  "devDependencies": {}
 }

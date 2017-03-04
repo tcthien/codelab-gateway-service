@@ -1,26 +1,21 @@
 const bindActionCreators = Redux.bindActionCreators;
 const connect = ReactRedux.connect;
 
-class ReactApp extends React.Component {
+class AdminContainer extends React.Component {
   render() {
     const {todos, actions} = this.props;
     return (
       <div>
-        <Header
-          addTodo={actions.addTodo}
-          />
-        <MainSection
-          todos={todos}
-          actions={actions}
-          />
+        <Header addTodo={actions.addTodo}/>
+        <MainSection todos={todos} actions={actions}/>
       </div>
     );
   }
 }
 
-ReactApp.propTypes = {
+AdminContainer.propTypes = {
   todos: React.PropTypes.array.isRequired,
-  actions: React.PropTypes.object.isRequired
+  actions: React.PropTypes.object.iisRequiredsRequired
 };
 
 function mapStateToProps(state) {
@@ -42,7 +37,7 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-const App = connect(
+const adminContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(ReactApp);
+)(AdminContainer);
