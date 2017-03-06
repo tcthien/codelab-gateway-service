@@ -1,7 +1,7 @@
 class Header extends React.Component {
   render() {
     return (
-      <div id="header">
+      <div id="header" className="z-depth-2">
         <div className="container">
           <h3 className="header-title">Welcome to Codelabs!</h3>
           <div className="header-description">
