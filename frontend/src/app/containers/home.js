@@ -3,11 +3,12 @@ const connect = ReactRedux.connect;
 
 class HomeContainer extends React.Component {
   render() {
+    const {tutorials} = this.props;
     return (
       <div>
         <NavigationBar/>
         <Header/>
-        <Main/>
+        <Main tutorials={tutorials}/>
         <Footer/>
       </div>
     );
@@ -15,10 +16,12 @@ class HomeContainer extends React.Component {
 }
 
 HomeContainer.propTypes = {
+  tutorials: React.PropTypes.array.isRequired
 };
 
 function mapStateToProps(state) {
   return {
+    tutorials: state.tutorials
   };
 }
 

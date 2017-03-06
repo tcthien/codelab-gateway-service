@@ -1,19 +1,21 @@
 class Tutorial extends React.Component {
   render() {
+    const {tutorials} = this.props;
+
     return (
       <div id="tutorialDiv" className="row">
         <div className="col s5">
           <ul id="tutorialTab" className="tabs">
             <li className="tab col s2"><a className="active" href="#aToZTab">A-Z</a></li>
-            <li className="tab col s2"><a href="#recentTab">RECENT</a></li>
-            <li className="tab col s2"><a href="#durationTab">DURATION</a></li>
+            <li className="tab col s2 disabled"><a href="#recentTab">RECENT</a></li>
+            <li className="tab col s2 disabled"><a href="#durationTab">DURATION</a></li>
           </ul>
         </div>
 
         <div className="col s7">
           <div className="row">
             <div className="codelab-input-field input-field col s10">
-              <input placeholder="Input your query" id="first_name" type="text" className="validate" />
+              <input placeholder="Input your query" id="first_name" type="text" className="validate"/>
             </div>
             <div className="codelab-input-field input-field col s2">
               <select id="catFilter">
@@ -26,7 +28,7 @@ class Tutorial extends React.Component {
           </div>
         </div>
 
-        <div id="aToZTab" className="col s12">Test 1</div>
+        <TutorialList tutorials={tutorials}/>
         <div id="recentTab" className="col s12">Test 2</div>
         <div id="durationTab" className="col s12">Test 3</div>
       </div>
@@ -34,4 +36,6 @@ class Tutorial extends React.Component {
   }
 }
 
-Tutorial.propTypes = {};
+Tutorial.propTypes = {
+  tutorials: React.PropTypes.array.isRequired
+};

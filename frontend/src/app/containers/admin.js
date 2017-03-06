@@ -15,7 +15,7 @@ class AdminContainer extends React.Component {
 
 AdminContainer.propTypes = {
   todos: React.PropTypes.array.isRequired,
-  actions: React.PropTypes.object.iisRequiredsRequired
+  actions: React.PropTypes.object.isRequired
 };
 
 function mapStateToProps(state) {

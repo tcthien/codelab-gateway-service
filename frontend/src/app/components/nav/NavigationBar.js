@@ -3,11 +3,11 @@ class NavigationBar extends React.Component {
     return (
       <nav id="navigation">
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">Logo</a>
+          <a href="#" className="brand-logo">DC9</a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
-            {/*<li><a href="/">Home</a></li>*/}
-            <li><a href="/about">About</a></li>
-            <li><a href="/admin">Admin</a></li>
+            {/* <li><a href="/">Home</a></li> */}
+            <li><a href="/">About</a></li>
+            <li><a href="/">Admin</a></li>
           </ul>
         </div>
       </nav>
