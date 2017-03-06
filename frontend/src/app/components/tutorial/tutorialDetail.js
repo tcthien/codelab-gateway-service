@@ -11,8 +11,7 @@ class TutorialDetail extends React.Component {
             <p>{tutorial.title}</p>
           </div>
           <div className="card-action">
-            <a className="left" href="#">Start</a>
-            <a className="right" href="#">Updated at</a>
+            <a className="right" href="#">Start</a>
           </div>
         </div>
       </div>

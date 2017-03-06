@@ -34,7 +34,8 @@ h3.header-title{
 }
 
 #mainDiv div.container {
-  padding-top: 20px
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #mainDiv div.codelab-input-field {
@@ -53,6 +54,9 @@ h3.header-title{
 }
 
 #tutorialDiv.row {
+  margin-bottom: 0px;
+}
+.tutorialRows{
   margin-bottom: 0px;
 }
 
