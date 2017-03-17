@@ -3,11 +3,15 @@
 // Layout ----------------------------------------------------------------
 html {
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  color: #555555;
 }
 
 p.header-info {
   margin-bottom: 2px;
   padding-bottom: 30px;
+}
+h3.header-title{
+  margin-top: 0px;
 }
 
 // Layout ----------------------------------------------------------------
@@ -19,23 +23,19 @@ p.header-info {
 
 // Header style ----------------------------------------------------------
 #header {
-  padding: 25px 0px 35px 0px;
-  box-shadow: 0px 3px 6px -3px #BDBDBD;
-}
-
-#header div.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 // Main style ------------------------------------------------------------
 #mainDiv {
-  margin-top: 3px;
   min-height: 300px;
-  border-top: thick #424242;
-  border-width: medium;
+  margin-top: 1px;
 }
 
 #mainDiv div.container {
-  padding-top: 20px
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #mainDiv div.codelab-input-field {
@@ -56,7 +56,37 @@ p.header-info {
 #tutorialDiv.row {
   margin-bottom: 0px;
 }
+.tutorialRows{
+  margin-bottom: 0px;
+}
 
+// Tutorial Detail stype -------------------------------------------------
+.tutorialDetail p,
+.tutorialDetail span,
+.tutorialDetail a{
+  color: #555555;
+}
+.tutorialDetail p{
+  text-align: justify;
+}
+.tutorialDetail .card .card-content {
+  padding: 20px;
+}
+.tutorialDetail .card-content{
+  height: 80px;
+}
+.tutorialDetail .card-action{
+  min-height: 55px;
+}
+.tutorialDetail .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+  margin-right: 0px;
+}
+//   Tutorial header
+.tutorialDetail .card-header{
+  height: 40px;
+  padding-top: 8px;
+  padding-right: 20px;
+}
 // Place holder color ----------------------------------------------------
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: #757575;
