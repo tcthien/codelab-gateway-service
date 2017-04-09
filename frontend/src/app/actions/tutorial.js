@@ -9,5 +9,3 @@ function editTutorial(id, text) {
 function deleteTutorial(id) {
   return {type: DELETE_TUTORIAL, id};
 }
-
-

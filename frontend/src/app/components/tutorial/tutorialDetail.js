@@ -5,7 +5,7 @@ class TutorialDetail extends React.Component {
       <div className="tutorialDetail col s3">
         <div className="card white">
           <div className={'card-header card-header-' + tutorial.category}>
-            <a className="right" href="#"></a>
+            <a className="right" href="#"/>
           </div>
           <div className="card-content">
             <p>{tutorial.title}</p>

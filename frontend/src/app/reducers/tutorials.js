@@ -109,8 +109,31 @@ const initialTutorialsState = [
         description: 'This step showing some summary about Java Collection Framework',
         length: 10
       }, {
-        title: 'TreeSet',
+        title: 'HashMap',
         description: 'This step showing some summary about Java Collection Framework - HashMap',
+        length: 5
+      }
+    ]
+  }, {
+    id: 5,
+    title: 'Java Collection Framework - TreeMap',
+    alias: 'java-collection-framework-treemap',
+    summary: 'This is dummy summary for this tutorial.',
+    category: 'Java',
+    author: 'Thien Tran',
+    totalLength: 20,
+    steps: [
+      {
+        title: 'Setup Environment',
+        description: 'This step showing how to setup environment to practice java collection framework',
+        length: 5
+      }, {
+        title: 'Introduction',
+        description: 'This step showing some summary about Java Collection Framework',
+        length: 10
+      }, {
+        title: 'TreeMap',
+        description: 'This step showing some summary about Java Collection Framework - TreeMap',
         length: 5
       }
     ]
