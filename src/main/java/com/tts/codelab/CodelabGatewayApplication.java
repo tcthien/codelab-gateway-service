@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableZuulProxy
 public class CodelabGatewayApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CodelabGatewayApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CodelabGatewayApplication.class, args);
+    }
 }
