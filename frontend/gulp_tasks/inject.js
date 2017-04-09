@@ -10,10 +10,10 @@ gulp.task('inject', inject);
 function inject() {
   const injectScripts = gulp.src([
     conf.path.tmp('app/constants/*.js'),
-    conf.path.tmp('app/reducers/todos.js'),
-    conf.path.tmp('app/reducers/tutorials.js'),
+    conf.path.tmp('app/reducers/!(index).js'),
     conf.path.tmp('app/reducers/index.js'),
     conf.path.tmp('app/actions/index.js'),
+    conf.path.tmp('app/actions/!(index).js'),
     conf.path.tmp('**/!(index).js'),
     conf.path.tmp('**/index.js'),
     `!${conf.path.tmp('**/*.spec.js')}`
